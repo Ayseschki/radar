@@ -52,7 +52,7 @@
       try {
         const response = await fetch("https://ayseschki.app.n8n.cloud/webhook/b0713c8f-b4aa-4641-81b8-213bca8e069b");
         const data = await response.json(); // or response.json() if structured
-        result.innerText = data;
+        result.innerText = data.summary;
       } catch (err) {
         result.innerText = "An error occurred: " + err.message;
       }
